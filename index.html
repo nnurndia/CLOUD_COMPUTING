@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Haven Nursery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkLogin()">
+
+    <header class="navbar">
+        <div class="logo">🌿 Green Haven Nursery</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#cart">Cart</a>
+            <a href="#contact">Contact</a>
+            <a href="login.html" onclick="logoutUser()">Logout</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <p class="tagline">Small Business | Fresh Flowers | Simple Care</p>
+            <h1>Bring Colour Into Your Garden 🌺</h1>
+            <p>
+                Green Haven Nursery offers beautiful Bougainvillea plants
+in vibrant red, elegant white, and bright yellow colours.
+Perfect for gardens, patios, and outdoor decoration.
+            </p>
+            <div class="hero-buttons">
+                <a href="#products" class="primary-btn">View Products</a>
+                <button onclick="showMessage()">Quick Message</button>
+            </div>
+            <p id="message"></p>
+        </div>
+
+        <div class="hero-image">
+
+            <img src="images/bougainvillea2.jpg"
+                alt="Bougainvillea"
+                class="hero-flower">
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-box">
+            <h3>🌷 Fresh Flowers</h3>
+            <p>Carefully selected flowers that are beautiful and ready to brighten your space.</p>
+        </div>
+        <div class="feature-box">
+            <h3>🪴 Simple Products</h3>
+            <p>Easy-to-choose flowers for gifts, decoration, and special moments.</p>
+        </div>
+        <div class="feature-box">
+            <h3>💚 Friendly Service</h3>
+            <p>We keep things simple, helpful, and customer-friendly.</p>
+        </div>
+    </section>
+
+   <section class="products" id="products">
+    <h2>Featured Flowers</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <div class="image-column">
+                <img src="images/bougainvillea.jpg"
+                     alt="Red Bougainvillea"
+                     class="product-img">
+
+                <p class="image-note">
+                    Red Bougainvillea
+                </p>
+            </div>
+
+            <h3>🌺 Red Bougainvillea</h3>
+
+            <p>
+                A vibrant flowering plant that adds a bold and cheerful touch
+                to any garden or outdoor space.
+            </p>
+
+            <h4>RM250</h4>
+
+            <button onclick="addToCart('Red Bougainvillea',250)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+            <div class="image-column">
+                <img src="images/bougainvillea-white.jpg"
+                     alt="White Bougainvillea"
+                     class="product-img">
+
+                <p class="image-note">
+                    White Bougainvillea
+                </p>
+            </div>
+
+            <h3>🤍 White Bougainvillea</h3>
+
+            <p>
+                Elegant white blooms that create a clean, peaceful,
+                and sophisticated garden atmosphere.
+            </p>
+
+            <h4>RM260</h4>
+
+            <button onclick="addToCart('White Bougainvillea',260)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+            <div class="image-column">
+                <img src="images/bougainvillea-yellow.jpg"
+                     alt="Yellow Bougainvillea"
+                     class="product-img">
+
+                <p class="image-note">
+                    Yellow Bougainvillea
+                </p>
+            </div>
+
+            <h3>💛 Yellow Bougainvillea</h3>
+
+            <p>
+                Bright yellow blossoms that bring warmth, happiness,
+                and a sunny tropical feel to your surroundings.
+            </p>
+
+            <h4>RM280</h4>
+
+            <button onclick="addToCart('Yellow Bougainvillea',280)">
+                Add to Cart
+            </button>
+        </div>
+
+    </div>
+</section>
+
+    <section class="cart-section" id="cart">
+        <h2>🛒 Shopping Cart</h2>
+        <div id="cartItems">
+            <p class="empty-cart">Your cart is empty.</p>
+        </div>
+
+        <h3 id="totalPrice">Total: RM0</h3>
+
+        <button class="checkout-btn" onclick="checkout()">Checkout</button>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Our Business</h2>
+        <p>
+            Green Haven Nursery is a small flower business dedicated to providing
+            fresh and beautiful flowers for homes, offices, and gifts.
+            We believe that flowers create a cheerful, warm, and welcoming atmosphere.
+        </p>
+        <br>
+        <p>
+            Our goal is to offer quality flowers at friendly prices for customers
+            who love simple and pretty floral arrangements. Whether you are buying
+            for yourself or for someone special, we are here to help you choose the
+            perfect flower.
+        </p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>
+            Visit our nursery or contact us for flower inquiries and orders.
+        </p>
+
+        <div class="contact-box">
+            <p><strong>Email:</strong> greenhaven@gmail.com</p>
+            <p><strong>Phone:</strong> +60 12-345 6789</p>
+            <p><strong>Location:</strong> Kuala Lumpur, Malaysia</p>
+            <p><strong>Business Hours:</strong> Monday - Friday, 9:00 AM - 5:00 PM</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Green Haven Nursery. All Rights Reserved.</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
